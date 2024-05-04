@@ -1,0 +1,36 @@
+package b6_java_homework_Day_3;
+import java.util.Scanner;
+
+public class CheckPrimeNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("-----------Homework - CHECK PRIME NUMBER -------");
+		
+		// user input
+		int number = userInput();
+		// check it Prime number or not 
+	}
+	
+	// user input - ask user input again if they input invalid number
+	public static int userInput() {
+		Scanner scanner = new Scanner(System.in);
+		boolean userInputIsValid = false;
+		int numberUserInput = 0;
+		while(!userInputIsValid) {
+			System.out.print("Please input integer number: ");
+			if(scanner.hasNextInt()) {
+				numberUserInput = scanner.nextInt();
+				System.out.println("Pass! You entered an integer");
+				userInputIsValid = true;
+			}else {
+	            String input = scanner.next();
+	            System.out.println("You did not enter an integer");
+			}
+		}
+//		scanner.close();
+		return numberUserInput;
+	}
+	
+
+}

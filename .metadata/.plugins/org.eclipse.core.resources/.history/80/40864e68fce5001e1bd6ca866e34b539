@@ -1,0 +1,42 @@
+package b6_java_homework_Day_3;
+
+import java.util.Scanner;
+
+public class FindSingleNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("HOMEWORK - Find Single Number");
+		int [] array = initializeArray();
+		// print the initialize array
+		printArray(array);
+		
+	}
+
+	// function create the array
+	public static int[] initializeArray() {
+		// user input array
+		Scanner scanner = new Scanner(System.in);
+		// declare the integer array
+		System.out.print("Please input you array length: ");
+		int arrayLength = scanner.nextInt();
+				
+		int[] newArray = new int[arrayLength];
+				
+		for(int i = 0; i < arrayLength; i++) {
+			System.out.print("Please enter element " + (i+1) + ": ");
+			newArray[i] = scanner.nextInt();
+		}
+		return newArray;
+	}
+	
+	// function print the array
+	public static void printArray(int[] array ) {
+		System.out.print("The array is: ");
+	    for(int i = 0; i < array.length; i++) {
+	        System.out.print(array[i] + " ");
+	    }
+	    System.out.println("\n");
+	}
+	
+}

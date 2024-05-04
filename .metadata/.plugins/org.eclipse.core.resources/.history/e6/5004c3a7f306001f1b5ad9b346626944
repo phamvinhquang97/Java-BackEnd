@@ -1,0 +1,11 @@
+package be6_Java_Algorithms;
+
+public class Long_Same_Prefix {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Longest Same Prefix");
+		String[] stringArray = {"flower", "flow", "flight"};
+	}
+
+}

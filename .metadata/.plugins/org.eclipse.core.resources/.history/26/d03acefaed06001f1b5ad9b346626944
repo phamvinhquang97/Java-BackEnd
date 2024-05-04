@@ -1,0 +1,11 @@
+package be6_Java_Algorithms;
+
+public class Sorting {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] unsortArray = {1, 2, 2, 0, 0, 1, 2, 2, 1};
+		
+	}
+
+}

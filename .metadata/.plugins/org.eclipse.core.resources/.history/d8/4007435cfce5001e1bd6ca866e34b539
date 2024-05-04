@@ -1,0 +1,11 @@
+package b6_java_homework_Day_3;
+
+public class FindSingleNumber {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("HOMEWORK - Find Single Number");
+		
+	}
+
+}
