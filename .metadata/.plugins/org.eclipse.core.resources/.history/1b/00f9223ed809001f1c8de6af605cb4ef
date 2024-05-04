@@ -1,0 +1,34 @@
+package be6_java_homework_day_14;
+
+public class theFeast {
+
+	public static void main(String[] args) {
+		int n = 10;
+		int c = 2;
+		int m = 5;
+		System.out.println(solution(n,c,m));
+	}
+
+	private static int solution(int n, int c, int m) {
+		int barNum = n/c; //1
+		int wrapNum = barNum; //1
+		int count = 0;
+		while(wrapNum >m-1) {
+			barNum += Math.floorDiv(wrapNum,m);
+			wrapNum = Math.floorDiv(wrapNum,m) + wrapNum % m;
+			count++;
+		}
+		System.out.println(count);
+		return barNum;
+	}
+	
+	public static int theFeast(int n , int c, int m) {
+		/*
+		 * numBarWarraper = 5
+		 * numBarWarrper != 0 -> no stop
+		 * if (numberBarWarraper/2 != integer) -> rememdingWrapper = 1 else 0;
+		 * */
+		return 0;
+		
+	}
+}

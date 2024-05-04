@@ -1,0 +1,26 @@
+package be6_java_homework_day_14;
+
+public class theFeast {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int moneyInnital = 15;
+		int costOfABar = 3;
+		int numberOfWarrapperGetFreeBar = 2;
+
+	}
+	
+	public static int theFeast(int n , int c, int m) {
+		/*
+		 * numBarWarraper = 5
+		 * barEaten = 0
+		 * numBarWarrper != 0 -> no stop
+		 * if (numberBarWarraper/2 != integer) -> rememdingWrapper = 1 else ;
+		 * 
+		 * */
+		int barEatean = 0;
+		
+		return 0;
+		
+	}
+}

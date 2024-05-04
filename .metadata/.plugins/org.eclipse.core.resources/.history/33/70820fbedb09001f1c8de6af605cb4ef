@@ -1,0 +1,35 @@
+package be6_java_homework_day_14;
+
+public class theFeast {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int moneyInnital = 15;
+		int costOfABar = 3;
+		int numberOfWarrapperGetFreeBar = 2;
+		int barEatean = theFeast(moneyInnital,costOfABar, numberOfWarrapperGetFreeBar);
+		System.out.println(barEatean);
+	}
+	
+	public static int theFeast(int moneyInnital , int costOfABar, int numberOfWarrapperGetFreeBar) {
+		/*
+		 * numBarWarraper = 5
+		 * barEaten = 0
+		 * numBarWarrper != 0 -> no stop
+		 * if (numberBarWarraper/2 != integer) -> rememdingWrapper = 1 else ;
+		 * 
+		 * */
+		int barEatean = 0;
+		barEatean = moneyInnital/costOfABar;
+		int numBarWrapper = barEatean;
+		int rememdingWrapper = numBarWrapper%numberOfWarrapperGetFreeBar;
+		while(numBarWrapper != 0 && rememdingWrapper !=0 && numBarWrapper+rememdingWrapper !=0) {
+			barEatean  += numBarWrapper/numberOfWarrapperGetFreeBar;
+			
+			
+		}
+		
+		return barEatean;
+		
+	}
+}
