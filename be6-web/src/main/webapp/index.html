@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<style>
+
+    form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+    }
+
+    input[type="text"], input[type="password"], input[list] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+	<form action="confirmation.html" method="GET">
+		<h1>Register</h1>
+			<label for="username">Username:</label> 
+			<input type="text" id="username" name="username"> <br> <br> 
+			<label for="pwd">Password:</label>
+			<input type="password" id="pwd" name="pwd"> <br> <br>
+		<div id = "gender">
+			<label for="gender">Gender</label> <br>
+			<input type="radio" id="male" name="gender" value="Male">
+			<label for="male">Male</label> <br> 
+			<input type="radio" id="female" name="gender" value="Female"> 
+			<label for="female">Female</label> <br>  <br> 
+		</div>
+		<div id="hobby-box'>
+			<label for="hobby">Hobby</label> <br>
+			<input type="checkbox" id="hobby1" name="hobby1" value="Music">
+			<label for="vehicle1">Music</label>
+			<input type="checkbox" id="hobby2" name="hobby2" value="Sport">
+			<label for="hobby2">Sport</label> 
+			<input type="checkbox" id="hobby3" name="hobby3" value="Reading">
+			<label for="hobby">Reading</label>
+			<input type="checkbox" id="hobby3" name="hobby3" value="Reading">
+			<label for="hobby">Sleeping</label> <br> <br>
+		</div>
+		<div id="city-box'>
+	  		<label for="city">Choose a city:</label>
+		  <select name="city" id="city">
+		    <option value="ALD">Aldailade</option>
+		    <option value="VIC">Sydney</option>
+		    <option value="SYD">Melourne</option>
+		  </select>
+ 			<br><br>
+		</div>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>

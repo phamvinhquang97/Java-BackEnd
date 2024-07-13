@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Confirmation Page</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .confirmation-box {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="confirmation-box">
+        <h1>Confirmation</h1>
+        <p>Thank you for registering!</p>
+        <p><strong>Username:</strong> <span id="conf-username"></span></p>
+        <p><strong>Gender:</strong> <span id="conf-gender"></span></p>
+        <p><strong>Hobbies:</strong> <span id="conf-hobbies"></span></p>
+        <p><strong>City:</strong> <span id="conf-city"></span></p>
+    </div>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        document.getElementById('conf-username').innerText = urlParams.get('username');
+        document.getElementById('conf-gender').innerText = urlParams.get('gender');
+        document.getElementById('conf-hobbies').innerText = 
+            [urlParams.get('hobby1'), urlParams.get('hobby2'), urlParams.get('hobby3'), urlParams.get('hobby4')]
+            .filter(Boolean).join(', ');
+        document.getElementById('conf-city').innerText = urlParams.get('city');
+    </script>
+</body>
+</html>
